@@ -24,8 +24,12 @@ app.use(bodyParser.json());
 
 //create a route - this is just for index page
 app.get('/', (req, res) => {
-    //wht this route sends
+    //what this route sends
     res.render('contact')
+})
+
+app.post('/send', (req, res) => {
+    console.log(req.body)
 })
 
 app.listen(5000, () => console.log('Server started...'))
