@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 //create a route - this is just for index page
 app.get('/', (req, res) => {
     //wht this route sends
-    res.send("Hello world is")
+    res.render('contact')
 })
 
 app.listen(5000, () => console.log('Server started...'))
