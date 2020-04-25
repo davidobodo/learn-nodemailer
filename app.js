@@ -46,7 +46,9 @@ app.post('/send', async (req, res) => {
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
+        // service: "gmail",
         host: "smtp.ethereal.email",
+        // port: 465,
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
